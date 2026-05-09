@@ -34,7 +34,7 @@ Subscribe now on [Whop.com](https://whop.com/global-trend-scout)!
 
 ### Install from Source
 ```bash
-git clone https://github.com/yourusername/global-trend-scout.git
+git clone https://github.com/charlesscandel-source/global-trend-scout.git
 cd global-trend-scout
 pip install -e .
 ```
