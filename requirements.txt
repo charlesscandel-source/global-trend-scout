@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+selenium
+webdriver-manager
+pandas
+gspread
+oauth2client
+tiktok-api
+amazon-scraper

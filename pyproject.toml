@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "global-trend-scout"
+version = "1.0.0"
+description = "Weekly data drop of 50 high-growth, low-competition products for E-commerce trend scouting."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "requests>=2.25.0",
+    "beautifulsoup4>=4.9.0",
+    "pandas>=1.3.0",
+    "gspread>=5.0.0",
+    "oauth2client>=4.1.0",
+    "tiktok-api>=0.10.0",
+    "amazon-scraper>=0.3.0",
+]
+
+[project.urls]
+Homepage = "https://whop.com/global-trend-scout"
+Repository = "https://github.com/yourusername/global-trend-scout"
+Issues = "https://github.com/yourusername/global-trend-scout/issues"
+
+[project.scripts]
+trend-scout = "global_trend_scout.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+global_trend_scout = ["data/*.csv"]
